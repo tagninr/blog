@@ -1,0 +1,79 @@
+@media screen and (max-width: 1130px) {
+	.row{max-width:96%}
+	#main-nav{max-width:96%!important;background:transparent;position:relative!important;margin:0 auto!important}
+	.is-sticky #main-nav{animation-name:none;animation-duration:0s}
+	.header-menu.row{max-width:100%}
+	.ticker .widget{max-width:96%}
+}
+@media screen and (max-width: 980px) {
+	#header-blog,.header-content{height:auto}
+	.header-logo{max-width:222px;margin:15px auto 30px;float:none;display:block}
+	.header-logo img{margin:0 auto}
+	.header-ads{max-width:100%;float:none;height:auto;margin:0 auto;display:block}
+	.header-ads .widget{line-height:0}
+	#main-wrapper{float:none;overflow:hidden;width:100%}
+	.recent-boxes .box-sec{margin-right:0}
+	.posts-title{margin-right:0}
+	#main-wrapper #main{margin-right:0}
+	#sidebar-wrapper{width:100%;margin:10px auto;float:none;padding-left:0}
+	#footer{padding:20px 0}
+	.sect-left{width:100%;margin-right:0}
+	.sect-left .widget{padding:10px}
+}
+@media screen and (max-width: 880px) {
+	#nav1,#menu-main-nav{display:none}
+	.selectnav{display:block;color:#eee}
+	.tm-menu{float:left;width:20%}
+	.tm-menu .selectnav{padding:0 5px;height:22px!important;line-height:22px;margin-top:5px;border-radius:2px!important;-moz-border-radius:2px!important;-webkit-border-radius:2px!important}
+	.header-menu #menu .selectnav{padding:0 10px!important;font-size:16px;height:26px;line-height:26px;margin-left:10px;float:left;border-radius:2px!important;margin-top:7px}
+	.featured .feat-align{width:50%}
+	.featured .feat-column1{width:100%;height:300px;margin-bottom:5px}
+	.featured .feat-column2{padding:0 2.5px 0 0}
+	.featured .feat-column3{padding:0 0 0 2.5px}
+	.featured .hot-item,.featured .rcp-thumb{height:300px}
+	.home-ad .widget{padding-right:0}
+}
+@media screen and (max-width: 700px) {
+	.fbox .bx-first .box-thumbnail,.fbox .bf-thumb,.featured .feat-column1,.featured .hot-item, .featured .rcp-thumb,.sbox .bx-column .box-thumbnail, .sbox .bx-column .bf-thumb{height:250px}
+	.fbox .bx-first{width:100%;margin-bottom:0;padding-right:0;border-right:0}
+	.fbox ul li{width:100%;float:left;margin-top:10px;margin-bottom:0;padding-top:10px;padding-bottom:0;border-top:1px solid #F5F5F5;border-bottom:0}
+	.fbox .bx-first .bf-content{min-height: auto;}
+	.sbox .bx-column{width: 100%;padding: 0 !important}
+	.sbox .item2{margin-top:10px}
+	.recent-boxes .column{width:100%}
+	.block-image{width:100%;height:250px;margin-right:0}
+	.block-image .thumb,.block-image .thumb a{height:250px}
+	.main-carousel,.carousel-item,.carousel-item .box-image{height:250px}
+	.index .post article,.archive .post article{overflow:hidden;position:relative;float:left;margin-top:10px}
+}
+@media screen and (max-width: 600px) {
+	.featured .feat-align{width:100%;height:250px;margin-bottom:5px;padding:0}
+	.featured .feat-column2{width:100%;padding:0}
+	.featured .hot-item,.featured .rcp-thumb{height:250px}
+	.featured .feat-column1 .rcp-title{font-size:20px}
+	.featured .feat-column3{margin-bottom:0!important}
+	.owl-carousel .owl-item,.carousel-item{width:100%}
+	.related-posts .related-item{width:100%;height:200px;margin:0 0 5px;padding:0}
+	.related-posts .related-item:last-child{margin-bottom:0}
+	.related-posts .related-item .related-img{height:200px}
+	.footer-wrapper{height:auto;padding:15px 0}
+	.footer-wrapper .copyright{text-align:center;float:none;height:auto;padding:0}
+	.native-opt{display:none}
+}
+@media screen and (max-width: 440px) {
+	#nav-search{width:100%}
+	.featured .feat-align,.featured .hot-item,.featured .rcp-thumb,.main-carousel,.carousel-item,.carousel-item .box-image,.block-image,.block-image .thumb,.block-image .thumb a,.fbox .bx-first .box-thumbnail,.fbox .bf-thumb,.sbox .bx-column .box-thumbnail,.sbox .bx-column .bf-thumb{height:200px}
+	.index .post h2,.archive .post h2{line-height:1.4em}
+	.post h2 a,.post h2 a:visited,.post h2 strong{font-size:20px;line-height:1.4em}
+	.item .post-title,.static_page .post-title{font-size:20px}
+}
+@media screen and (max-width: 340px) {
+	.header-menu #menu .selectnav{max-width:60%}
+	.error-item{font-size:140px}
+}
+@media screen and (max-width: 310px) {
+	.header-logo{margin:15px auto 10px}
+	.header-menu #menu .selectnav{max-width:50%}
+	.header-ads,li.li-home,#sidebar-wrapper,.sect-left{display:none}
+	.error-item{font-size:100px}
+}
