@@ -20,4 +20,8 @@ class Posts extends Model
 		return $this->hasMany('App\Comments');
 		// return $this->hasMany('App\Comments', 'posts_id', 'id');
 	}
+
+	public function tags(){
+		return $this->belongToMany('App\Tags');
+	}
 }
