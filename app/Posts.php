@@ -9,11 +9,11 @@ class Posts extends Model
 	protected $table = "posts"
 
 	public function category(){
-		return $this->belongTo('App\Category', 'category_id', 'id');
+		return $this->belongsTo('App\Category', 'category_id', 'id');
 	}
 
 	public function users(){
-		return $this->belongTo('App\User', 'users_id', 'id');
+		return $this->belongsTo('App\User', 'users_id', 'id');
 	}
 
 	public function comments(){
@@ -22,6 +22,7 @@ class Posts extends Model
 	}
 
 	public function tags(){
-		return $this->belongToMany('App\Tags');
+		return $this->belongsToMany('App\Tags');
 	}
 }
+

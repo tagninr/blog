@@ -9,10 +9,10 @@ class Comments extends Model
 	protected $table = "comments"
 
 	public function posts(){
-		return $this->belongTo('App\Posts', 'posts_id', 'id');
+		return $this->belongsTo('App\Posts', 'posts_id', 'id');
 	}
 
 	public function users(){
-		return $this->belongTo('App\Users', 'users_id', 'id');
+		return $this->belongsTo('App\Users', 'users_id', 'id');
 	}
 }

@@ -9,6 +9,6 @@ class Category extends Model
 	protected $table = "categories"
 
     public function category(){
-    	return $this->belongTo('App\Category', 'parent_id', 'id');
+    	return $this->belongsTo('App\Category', 'parent_id', 'id');
     }
 }
