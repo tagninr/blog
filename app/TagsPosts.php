@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class TagsPosts extends Model
 {
-	protected $table = 'tags_posts'
+	protected $table = 'tags_posts';
 
 	public function posts(){
 		return $this->belongsTo('App\Posts', 'posts_id', 'id');

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Posts extends Model
 {
-	protected $table = "posts"
+	protected $table = "posts";
 
 	public function category(){
 		return $this->belongsTo('App\Category', 'category_id', 'id');
@@ -23,6 +23,12 @@ class Posts extends Model
 
 	public function tags(){
 		return $this->belongsToMany('App\Tags');
+	}
+
+	public function setCreatedAtAttribute($date){
+  	//format lại $date được gửi vào từ form
+	//https://kungfuphp.com/laravel-framework-5/xu-ly-ngay-thang-trong-laravel-5.html		
+  		$this->attributes['created_at'] = Carbon::createFromFormat('F d, y',$date);
 	}
 }
 
