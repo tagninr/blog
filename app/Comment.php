@@ -4,15 +4,15 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Comments extends Model
+class Comment extends Model
 {
 	protected $table = "comments";
 
 	public function posts(){
-		return $this->belongsTo('App\Posts', 'posts_id', 'id');
+		return $this->belongsTo('App\Post', 'posts_id', 'id');
 	}
 
 	public function users(){
-		return $this->belongsTo('App\Users', 'users_id', 'id');
+		return $this->belongsTo('App\User', 'users_id', 'id');
 	}
 }
