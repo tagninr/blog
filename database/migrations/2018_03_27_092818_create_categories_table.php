@@ -18,7 +18,10 @@ class CreateCategoriesTable extends Migration
             $table->string('name');
             $table->string('slug');
             $table->integer('parent_id')->unsigned()->nullable();
+            $table->foreign('parent_id')->references('id')->on('categories')->onDelete('cascade')->onUpdate('cascade');
+            $table->boolean('status')->default(0);
             $table->timestamps();
+            // $table->timestamps()->default(Carbon::now())->default(date("Y-m-d H:i:s"));
         });
     }
 
